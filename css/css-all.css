@@ -1,0 +1,453 @@
+/* 字型 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 顏色設定 */
+:root {
+    --primary-100:#F5FEE7;
+	--Primary-200:#E8FEC5;
+	--Primary-300:#C0FA73;
+	--Primary-400:#57A203;
+	--Primary-500:#477A11;
+	--Neutral-0:#FFFFFF;
+	--Neutral-100:#F8F9FA;
+	--Neutral-200:#E9ECEF;
+	--Neutral-300:#DEE2E6;
+	--Neutral-400:#CED4DA;
+	--Neutral-500:#ADB5BD;
+	--Neutral-600:#6C757D;
+	--Neutral-700:#495057;
+	--Neutral-800:#343A40;
+	--Neutral-900:#212529;
+	--Danger-300:#D74F4F;
+} 
+
+
+/* 全域基本設定 */
+*, *::before, *::after {
+    box-sizing: border-box;
+	/* outline: 1px solid black; */
+}
+
+body{
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.05;
+	color: var(--Neutral-900);
+}
+
+img {
+    vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: var(--Neutral-900);
+	text-decoration: none;
+	display: block;
+	font-weight: 500;
+}
+
+/* 排版 */
+.container {
+	width: 1296px;
+	margin: 0 auto;
+}
+
+.col-1 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12);
+}
+
+.col-2 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+	padding-right: 12px;
+	padding-left: 12px;
+	width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -12px;
+	margin-left: -12px;
+}
+
+.df {
+	display: flex;
+}
+
+.f-wrap {
+	flex-wrap: wrap;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+/* 標籤 */
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+	font-weight: 700;
+	line-height: 1.2;
+	font-size: 32px;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.2;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.a-green a {
+    color: var(--Primary-400);
+    text-underline-offset: 4px ;
+    display: block;
+}
+
+/* 文字樣式與顏色 */
+.text-sm {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.text-primary400 {
+	color: var(--Primary-400);
+}
+
+.text-Neutral0 {
+    color: var(--Neutral-0);
+}
+
+.text-Neutral300 {
+	color: var(--Neutral-300);
+}
+
+.text-Neutral600 {
+	color: var(--Neutral-600);
+}
+
+.text-danger {
+	color: var(--Danger-300);
+}
+
+/* 背景色 */
+.bg-primary100 {
+    background-color: var(--primary-100);
+}
+
+.bg-primary200 {
+	background-color: var(--Primary-200);
+}
+
+.bg-Neutral100 {
+	background-color: var(--Neutral-100);
+}
+
+.bg-Neutral300 {
+    background-color: var(--Neutral-300);
+}
+
+/* 樣式 */
+.gray-line {
+   border-bottom: 1px solid var(--Neutral-300);
+}
+
+.left-line {
+    border-left: 1px solid var(--Neutral-900);
+    padding-left: 8px;
+}
+
+.grayleft-line {
+    padding-left: 12px;
+    border-left: 3px solid var(--Neutral-300);
+}
+
+/* 間距 */
+.p-12 {
+	padding: 12px;
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+.p-x-12 {
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.p-y-7 {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.p-y-95 {
+	padding-top: 9.5px;
+	padding-bottom: 9.5px;
+}
+
+.p-y-8 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.p-y-12 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.p-y-16 {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.p-y-24 {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.p-y-32 {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.p-y-48 {
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+.p-y-64 {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.pr-8 {
+    padding-right: 8px;
+}
+
+.pt-32 {
+	padding-top: 32px;
+}
+
+.pb-48 {
+    padding-bottom: 48px;
+}
+
+.mb-4 {
+	margin-bottom: 4px;
+}
+
+.mb-8 {
+	margin-bottom: 8px;  
+}
+
+.mb-12 {
+	margin-bottom: 12px;
+}
+
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-48 {
+	margin-bottom: 48px;
+}
+
+.mr-8 {
+	margin-right: 8px;
+}
+
+.mr-12 {
+	margin-right: 12px;
+}
+
+.mr-24 {
+	margin-right: 24px;
+}
+
+.mr-40 {
+	margin-right: 40px;
+}
+
+.mr-48 {
+	margin-right: 48px;
+}
+
+.gap-8 {
+	gap: 8px;
+}
+
+/* 元件 */
+.btn {
+	border-radius: 4px;
+	padding: 12px 21px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+.btn-dark {
+	color: var(--Neutral-0);
+	background-color: var(--Neutral-900);
+}
+
+.btn-light {
+	border: 1px solid var(--Neutral-900);
+}
