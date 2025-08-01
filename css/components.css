@@ -1,0 +1,52 @@
+/* 元件 */
+.breadcrumb-item +  .breadcrumb-item::before{
+	content: '/';
+	padding: 0 12px;
+	color: var(--Neutral-300);
+	font-weight: 700;
+}
+
+.breadcrumb-item{
+	display: flex;
+	font-weight: 500;
+}
+
+.breadcrumb-link{
+	color: var(--Neutral-600);
+}
+
+@media (max-width:767px) {
+	.breadcrumb-item +  .breadcrumb-item::before{
+		padding: 0 8px;
+	}
+	.breadcrumb-item{
+		font-size: 14px;
+	}	
+}
+
+
+.btn {
+	border-radius: 4px;
+	padding: 12px 21px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+@media (max-width:576px) {
+	.btn{
+		padding: 8px 16px;
+	}
+}
+
+.btn-dark {
+	color: var(--Neutral-0);
+	background-color: var(--Neutral-900);
+}
+
+.btn-light {
+	border: 1px solid var(--Neutral-900);
+}
