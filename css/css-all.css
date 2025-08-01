@@ -356,6 +356,12 @@ h6 {
 	color: var(--Danger-300);
 }
 
+@media (max-width:767px) {
+	.text-md{
+		font-size: 14px;
+	}
+}
+
 
 /* 背景色 */
 .bg-primary100 {
@@ -461,6 +467,11 @@ h6 {
 }
 
 @media (max-width:767px) {
+	.p-x-md-8{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	
 	.p-md-24{
 		padding: 24px;
 	}
@@ -542,6 +553,12 @@ h6 {
 }
 
 @media (max-width:767px) {
+	.mb-md-0{
+		margin-bottom: 0;  
+	}
+	.mb-md-8{
+		margin-bottom: 8px;
+	}
 	.mb-md-12{
 		margin-bottom: 12px;
 	}
@@ -577,6 +594,32 @@ h6 {
 }
 
 /* 元件 */
+.breadcrumb-item +  .breadcrumb-item::before{
+	content: '/';
+	padding: 0 12px;
+	color: var(--Neutral-300);
+	font-weight: 700;
+}
+
+.breadcrumb-item{
+	display: flex;
+	font-weight: 500;
+}
+
+.breadcrumb-link{
+	color: var(--Neutral-600);
+}
+
+@media (max-width:767px) {
+	.breadcrumb-item +  .breadcrumb-item::before{
+		padding: 0 8px;
+	}
+	.breadcrumb-item{
+		font-size: 14px;
+	}	
+}
+
+
 .btn {
 	border-radius: 4px;
 	padding: 12px 21px;
