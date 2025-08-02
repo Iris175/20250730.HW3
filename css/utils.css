@@ -235,6 +235,11 @@ h6 {
 	font-weight: 400;
 }
 
+.text-md {
+	font-size: 16px;
+	font-weight: 400;
+}
+
 .text-primary400 {
 	color: var(--Primary-400);
 }
@@ -375,10 +380,21 @@ h6 {
 		padding: 24px;
 	}
 	
+	.p-y-md-0{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
 	.p-y-md-32{
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
+
+	.p-y-md-40{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
 	.pb-md-32{
 		padding-bottom: 32px;
 	}
